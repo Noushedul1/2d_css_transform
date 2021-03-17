@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*start for transform rotate*/
+.rotate{
+	padding: 30px;
+	background-color: tomato;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 30px;
+	transform: rotate(0deg);
+	transition: transform .3s;
+}
+.rotate:hover{
+	transform: rotate(50deg);
+}
+/*end for transform rotate*/
+
+/*start for transform translate*/
+.translate{
+	padding: 30px;
+	background-color: tomato;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 30px;
+	transform: translate(0,0);
+	transition: transform .3s;
+}
+.translate:hover{
+	transform: translate(30px,40px);
+	/*we have also translateX,translateY*/
+}
+/*end for transform translate*/
+
+/*start for transform skew*/
+.skew{
+	padding: 30px;
+	background-color: tomato;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 30px;
+	transform: skew(0deg);
+	transition: transform .3s;
+}
+.skew:hover{
+	transform: skew(0deg,30deg);
+	/*we have also skewX,skewY*/
+}
+/*end for transform skew*/
+
+/*Start for transform scale*/
+.scale{
+	padding: 30px;
+	background-color: tomato;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 30px;
+	transform: scale(1);
+	transition: transform .3s;
+	border: 1px solid black;
+}
+.scale:hover{
+	transform: scale(1,2);
+	/*we have also scaleX,scaleY ; here value 1 is default. anothern value is none for transform */
+}
+/*end for transform scale*/
+
+/*start for transform rotate origin*/
+.origin{
+	padding: 30px;
+	background-color: tomato;
+	width: 200px;
+	margin: 0 auto;
+	transform: rotate(0);
+	transform-origin: 0 0;
+	transition: transform .3s;
+}
+.origin:hover{
+	transform: rotate(30deg);
+	transform-origin: left top;
+	/*here 
+		1: left top;
+		2: left bottom;
+		3: right top;
+		4: right bottom;
+	*/
+}
+/*end for transform rotate origin*/
